@@ -27,7 +27,7 @@ SwinIR-LTE|[Google Drive](https://drive.google.com/file/d/1DnrL86pUKwRXNLOxoK_GJ
 
 **Table 2: SwinIR-LTE**: `bash ./scripts/test-benchmark-swin.sh ./save/swinir-lte.pth 8 0`
 
-## Training & Evaluation
+## Train & Test
 
 **EDSR-baseline-LTE**
 
