@@ -26,3 +26,17 @@ SwinIR-LTE|[Google Drive](https://drive.google.com/file/d/1DnrL86pUKwRXNLOxoK_GJ
 **Table 2: RDN-LTE**: `bash ./scripts/test-benchmark.sh ./save/rdn-lte.pth 0`
 
 **Table 2: SwinIR-LTE**: `bash ./scripts/test-benchmark-swin.sh ./save/swinir-lte.pth 8 0`
+
+## Train
+
+**EDSR-baseline-LTE**: `python train.py --config configs/train-div2k/train_edsr-baseline-lte.yaml --gpu 0`
+
+**RDN-LTE**: `python train.py --config configs/train-div2k/rdn-lte.yaml --gpu 0,1`
+
+**SwinIR-LTE**: `python train.py --config configs/train-div2k/swinir-lte.yaml --gpu 0,1,2,3`
+
+Model|Training time on NVIDIA RTX 3090 24GB (# GPU)
+:-:|:-:
+EDSR-baseline-LTE|21h (1 GPU)
+RDN-LTE|82h (2 GPU)
+SwinIR-LTE|75h (4 GPU)
