@@ -1,30 +1,7 @@
 .ipynb_checkpoints/
-load/
-
-result_feature/
-result_image
-save/
-
-pysrwarp/
-
-_datasets_benchmark/
-
-
-log/
-
-result_flow/
-
-result_image/
-
-save/
-
-scripts/
-
-weights/
-
-bu_*/
-
 __pycache__/
+load/
+save/
 
 # Created by https://www.toptal.com/developers/gitignore/api/linux,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,python
