@@ -31,6 +31,8 @@ SwinIR-LTE|[Google Drive](https://drive.google.com/file/d/1DnrL86pUKwRXNLOxoK_GJ
 
 **EDSR-baseline-LTE**: `python train.py --config configs/train-div2k/train_edsr-baseline-lte.yaml --gpu 0`
 
+**EDSR-baseline-LTE+**: `python train.py --config configs/train-div2k/train_edsr-baseline-lte-fast.yaml --gpu 0`
+
 **RDN-LTE**: `python train.py --config configs/train-div2k/rdn-lte.yaml --gpu 0,1`
 
 **SwinIR-LTE**: `python train.py --config configs/train-div2k/swinir-lte.yaml --gpu 0,1,2,3`
