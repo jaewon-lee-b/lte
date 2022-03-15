@@ -17,27 +17,12 @@ SwinIR-LTE|[Google Drive](https://drive.google.com/file/d/1DnrL86pUKwRXNLOxoK_GJ
 
 2. Reproduce Experiments
 
-Table 1: EDSR-baseline-LTE
-```
-bash ./scripts/test-div2k.sh ./save/edsr-baseline-lte.pth 0
-```
+**Table 1: EDSR-baseline-LTE**:`bash ./scripts/test-div2k.sh ./save/edsr-baseline-lte.pth 0`
 
-Table 1: RDN-LTE
-```
-bash ./scripts/test-div2k.sh ./save/rdn-lte.pth 0
-```
+**Table 1: RDN-LTE**:`bash ./scripts/test-div2k.sh ./save/rdn-lte.pth 0`
 
-Table 1: SwinIR-LTE
-```
-bash ./scripts/test-div2k-swin.sh ./save/swinir-lte.pth 8 0
-```
+**Table 1: SwinIR-LTE**:`bash ./scripts/test-div2k-swin.sh ./save/swinir-lte.pth 8 0`
 
-Table 2: RDN-LTE
-```
-bash ./scripts/test-benchmark.sh ./save/rdn-lte.pth 0
-```
+**Table 2: RDN-LTE**:`bash ./scripts/test-benchmark.sh ./save/rdn-lte.pth 0`
 
-Table 2: SwinIR-LTE
-```
-bash ./scripts/test-benchmark-swin.sh ./save/swinir-lte.pth 8 0
-```
+**Table 2: SwinIR-LTE**"`bash ./scripts/test-benchmark-swin.sh ./save/swinir-lte.pth 8 0`
