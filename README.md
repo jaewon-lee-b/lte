@@ -1,4 +1,4 @@
-# LTE
+# Local Texture Estimator for Implicit Representation Function
 This repository contains the official implementation for LTE introduced in the following paper:
 
 [**Local Texture Estimator for Implicit Representation Function**](https://arxiv.org/abs/2111.08918) (CVPR 2022)
@@ -70,6 +70,11 @@ RDN-LTE|82h (2 GPU)
 SwinIR-LTE|75h (4 GPU)
 
 We use NVIDIA RTX 3090 24GB for training.
+
+## Fourier space
+
+The script [Eval-Fourier-Feature-Space](https://github.com/jaewon-lee-b/lte/blob/main/Eval-Fourier-Feature-Space.ipynb) is used to generate the paper plots.
+
 
 ## Acknowledgements
 This code is built on [LIIF](https://github.com/yinboc/liif) and [SwinIR](https://github.com/JingyunLiang/SwinIR). We thank the authors for sharing their codes.
