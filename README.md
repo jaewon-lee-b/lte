@@ -71,7 +71,7 @@ SwinIR-LTE|75h (4 GPU)
 
 We use NVIDIA RTX 3090 24GB for training.
 
-## Fourier space
+## Fourier Space
 
 The script [Eval-Fourier-Feature-Space](https://github.com/jaewon-lee-b/lte/blob/main/Eval-Fourier-Feature-Space.ipynb) is used to generate the paper plots.
 
