@@ -70,3 +70,6 @@ RDN-LTE|82h (2 GPU)
 SwinIR-LTE|75h (4 GPU)
 
 We use NVIDIA RTX 3090 24GB for training.
+
+## Acknowledgements
+This code is built on [LIIF](https://github.com/yinboc/liif) and [SwinIR](https://github.com/JingyunLiang/SwinIR). We thank the authors for sharing their codes.
