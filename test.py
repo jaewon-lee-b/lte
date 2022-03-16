@@ -79,16 +79,15 @@ def eval_psnr(loader, model, data_norm=None, eval_type=None, eval_bsize=None, wi
             h_pad = 0
             w_pad = 0
             
-            if fast == False: # for memory issue
-                coord = batch['coord']
-                cell = batch['cell']
+            coord = batch['coord']
+            cell = batch['cell']
             
         if eval_bsize is None:
             with torch.no_grad():
                 pred = model(inp, coord, cell)
         else:
             if fast:
-                pred = model(inp, batch['coord'], batch['cell']*max(scale/scale_max, 1))
+                pred = model(inp, coord, cell*max(scale/scale_max, 1))
             else:
                 pred = batched_predict(model, inp, coord, cell*max(scale/scale_max, 1), eval_bsize) # cell clip for extrapolation
             

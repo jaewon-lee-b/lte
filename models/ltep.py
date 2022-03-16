@@ -14,7 +14,6 @@ class LTEP(nn.Module):
 
     def __init__(self, encoder_spec, num_layer=3, hidden_dim=256, out_dim=3):
         super().__init__()
-        self.hid = hidden_dim
         self.encoder = models.make(encoder_spec)
                 
         # Fourier prediction
