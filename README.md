@@ -53,13 +53,13 @@ SwinIR-LTE|[Google Drive](https://drive.google.com/file/d/1DnrL86pUKwRXNLOxoK_GJ
 
 ### **RDN-LTE**
 
-**Train**: `python train.py --config configs/train-div2k/rdn-lte.yaml --gpu 0,1`
+**Train**: `python train.py --config configs/train-div2k/train_rdn-lte.yaml --gpu 0,1`
 
 **Test**: `python test.py --config configs/test/test-div2k-2.yaml --model save/_train_rdn-lte/epoch-last.pth --gpu 0`
 
 ### **SwinIR-LTE**
 
-**Train**: `python train.py --config configs/train-div2k/swinir-lte.yaml --gpu 0,1,2,3`
+**Train**: `python train.py --config configs/train-div2k/train_swinir-lte.yaml --gpu 0,1,2,3`
 
 **Test**: `python test.py --config configs/test/test-div2k-2.yaml --model save/_train_swinir-lte/epoch-last.pth --window 8 --gpu 0`
 
