@@ -4,6 +4,10 @@ This repository contains the official implementation for LTE introduced in the f
 [**Local Texture Estimator for Implicit Representation Function**](https://ipl.dgist.ac.kr/LTE_cvpr.pdf) (CVPR 2022)
 
 
+## Installation
+`pip install -r requirement.txt`
+
+
 ## Quick Start
 
 ### 1. Download a pre-trained model.
