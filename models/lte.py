@@ -20,16 +20,11 @@ class LTE(nn.Module):
 
         self.imnet = models.make(imnet_spec, args={'in_dim': hidden_dim})
 
-    def gen_feat(self, inp, cpu):
+    def gen_feat(self, inp):
         self.inp = inp
-        if cpu:
-            self.feat_coord = make_coord(inp.shape[-2:], flatten=False) \
-                .permute(2, 0, 1) \
-                .unsqueeze(0).expand(inp.shape[0], 2, *inp.shape[-2:])
-        else:
-            self.feat_coord = make_coord(inp.shape[-2:], flatten=False).cuda() \
-                .permute(2, 0, 1) \
-                .unsqueeze(0).expand(inp.shape[0], 2, *inp.shape[-2:])
+        self.feat_coord = make_coord(inp.shape[-2:], flatten=False).cuda() \
+            .permute(2, 0, 1) \
+            .unsqueeze(0).expand(inp.shape[0], 2, *inp.shape[-2:])
         
         self.feat = self.encoder(inp)
         self.coeff = self.coef(self.feat)
