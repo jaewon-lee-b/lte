@@ -5,7 +5,7 @@ This repository contains the official implementation for LTE introduced in the f
 
 
 ## Installation
-`pip install -r requirement.txt`
+`pip install -r requirements.txt`
 
 
 ## Quick Start
