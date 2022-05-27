@@ -85,5 +85,19 @@ The script [Eval-Fourier-Feature-Space](https://github.com/jaewon-lee-b/lte/blob
 `python demo.py --input ./demo/Urban100_img012x2.png --model save/edsr-baseline-lte.pth --scale 2 --output output.png --gpu 0`
 
 
+## Citation
+If you find our work useful in your research, please consider citing our paper:
+
+```
+@article{lte-jaewon-lee,
+  title={Local Texture Estimator for Implicit Representation Function},
+  author={Jaewon Lee, Kyong Hwan Jin},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2022}
+}
+```
+
+
+
 ## Acknowledgements
 This code is built on [LIIF](https://github.com/yinboc/liif) and [SwinIR](https://github.com/JingyunLiang/SwinIR). We thank the authors for sharing their codes.
