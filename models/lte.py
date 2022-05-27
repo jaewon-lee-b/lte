@@ -20,8 +20,17 @@ class LTE(nn.Module):
 
         self.imnet = models.make(imnet_spec, args={'in_dim': hidden_dim})
 
-    def gen_feat(self, inp):
+    def gen_feat(self, inp, cpu):
         self.inp = inp
+        if cpu:
+            self.feat_coord = make_coord(inp.shape[-2:], flatten=False) \
+                .permute(2, 0, 1) \
+                .unsqueeze(0).expand(inp.shape[0], 2, *inp.shape[-2:])
+        else:
+            self.feat_coord = make_coord(inp.shape[-2:], flatten=False).cuda() \
+                .permute(2, 0, 1) \
+                .unsqueeze(0).expand(inp.shape[0], 2, *inp.shape[-2:])
+        
         self.feat = self.encoder(inp)
         self.coeff = self.coef(self.feat)
         self.freqq = self.freq(self.feat)
@@ -34,15 +43,13 @@ class LTE(nn.Module):
 
         vx_lst = [-1, 1]
         vy_lst = [-1, 1]
-        eps_shift = 1e-6
+        eps_shift = 1e-6 
 
         # field radius (global: [-1, 1])
         rx = 2 / feat.shape[-2] / 2
         ry = 2 / feat.shape[-1] / 2
 
-        feat_coord = make_coord(feat.shape[-2:], flatten=False).cuda() \
-            .permute(2, 0, 1) \
-            .unsqueeze(0).expand(feat.shape[0], 2, *feat.shape[-2:])
+        feat_coord = self.feat_coord
 
         preds = []
         areas = []
