@@ -1,12 +1,20 @@
 # Local Texture Estimator for Implicit Representation Function
+
 This repository contains the official implementation for LTE introduced in the following paper:
 
 [**Local Texture Estimator for Implicit Representation Function**](https://ipl.dgist.ac.kr/LTE_cvpr.pdf) (CVPR 2022)
 
 
 ## Installation
-`pip install -r requirements.txt`
 
+Our code is based on Ubuntu 20.04, pytorch 1.10.0, CUDA 11.3 (NVIDIA RTX 3090 24GB, sm86) and python 3.6.
+
+We recommend using [conda](https://www.anaconda.com/distribution/) for installation:
+
+```
+conda env create --file environment.yaml
+conda activate lte
+```
 
 ## Quick Start
 
@@ -75,6 +83,7 @@ SwinIR-LTE|75h (4 GPU)
 
 We use NVIDIA RTX 3090 24GB for training.
 
+
 ## Fourier Space
 
 The script [Eval-Fourier-Feature-Space](https://github.com/jaewon-lee-b/lte/blob/main/Eval-Fourier-Feature-Space.ipynb) is used to generate the paper plots.
@@ -86,6 +95,7 @@ The script [Eval-Fourier-Feature-Space](https://github.com/jaewon-lee-b/lte/blob
 
 
 ## Citation
+
 If you find our work useful in your research, please consider citing our paper:
 
 ```
@@ -97,7 +107,6 @@ If you find our work useful in your research, please consider citing our paper:
 }
 ```
 
-
-
 ## Acknowledgements
+
 This code is built on [LIIF](https://github.com/yinboc/liif) and [SwinIR](https://github.com/JingyunLiang/SwinIR). We thank the authors for sharing their codes.
