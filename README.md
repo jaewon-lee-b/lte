@@ -101,11 +101,13 @@ The script [Eval-Fourier-Feature-Space](https://github.com/jaewon-lee-b/lte/blob
 If you find our work useful in your research, please consider citing our paper:
 
 ```
-@article{lte-jaewon-lee,
-  title={Local Texture Estimator for Implicit Representation Function},
-  author={Jaewon Lee, Kyong Hwan Jin},
-  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2022}
+@InProceedings{lte-jaewon-lee,
+    author    = {Lee, Jaewon and Jin, Kyong Hwan},
+    title     = {Local Texture Estimator for Implicit Representation Function},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {1929-1938}
 }
 ```
 
