@@ -28,6 +28,12 @@ EDSR-baseline-LTE+|[Google Drive](https://drive.google.com/file/d/1k_BWZWC4tvWA0
 RDN-LTE|[Google Drive](https://drive.google.com/file/d/1fdj5cvSopIqFi74x9rofPP9O_2HfSp7K/view?usp=sharing)
 SwinIR-LTE|[Google Drive](https://drive.google.com/file/d/1DnrL86pUKwRXNLOxoK_GJdrP6IZ3y9nH/view?usp=sharing)
 
+Model|Download
+:-:|:-:
+SwinIR-MetaSR|[Google Drive](https://drive.google.com/file/d/1uG8PTLRdKxO4AaFh3SNl_nFcHqeGtu4y/view?usp=sharing)
+SwinIR-LIIF|[Google Drive](https://drive.google.com/file/d/1TvXXvimq-FlVB6tOye5J3xTqPv_DRl_P/view?usp=sharing)
+
+
 ### 2. Reproduce experiments.
 
 **Table 1: EDSR-baseline-LTE**
