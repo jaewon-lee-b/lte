@@ -38,7 +38,7 @@ model:
   name: swinir
   args:
     encoder_spec:
-      name: rdn
+      name: swinir
       args:
         no_upsampling: true
     imnet_spec:
